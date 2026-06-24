@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraCare - Services</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container nav-wrapper">
+    <a href="index.html" class="logo" id="header-logo">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+      </svg>
+      <span>AuraCare</span>
+    </a>
+
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links" id="main-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button class="btn btn-primary book-apt-btn" id="nav-book-btn">Book Now</button></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-controls="main-nav-links" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Our Specialized Services</h2>
+        <p>We provide a comprehensive range of clinical specialties under one roof, backed by modern facilities and expert care.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Cardiology -->
+        <div class="service-card" id="service-cardiology">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <h3>Cardiology</h3>
+          <p>Complete heart diagnostics, angiography, vascular care, and preventive cardiovascular planning led by top cardiologists.</p>
+          <div class="service-link" data-service="cardiology" role="button" tabindex="0" id="link-srv-cardiology">
+            <span>Read More</span>
+            <svg viewBox="0 0 24 24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/></svg>
+          </div>
+        </div>
+
+        <!-- Additional cards (pediatrics, neurology, etc.) copied from index.html -->
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+        </svg>
+        <span>AuraCare</span>
+      </a>
+      <p>AuraCare Hospital provides exceptional medical treatments, innovative procedures, and supportive specialist services to guarantee patient safety and welfare.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 AuraCare Hospital. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Hide all sections except services
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('main > section').forEach(sec => {
+      if (sec.id !== 'services') sec.style.display = 'none'
+    })
+  })
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
