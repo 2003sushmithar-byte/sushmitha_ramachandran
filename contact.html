@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraCare - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container nav-wrapper">
+    <a href="index.html" class="logo" id="header-logo">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+      </svg>
+      <span>AuraCare</span>
+    </a>
+
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links" id="main-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><button class="btn btn-primary book-apt-btn" id="nav-book-btn">Book Now</button></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-controls="main-nav-links" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Contact & Connect</h2>
+        <p>Get in touch with us to solve billing queries, request information, or locate our main clinic lobby.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Form Card -->
+        <div class="contact-form-box">
+          <h3>Drop Us a Message</h3>
+          <form id="contact-form" noValidate>
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="John Doe">
+                <div class="error-msg">Name field is required</div>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="john@example.com">
+                <div class="error-msg">Please enter a valid email</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number *</label>
+              <input type="tel" id="contact-phone" class="form-control" placeholder="+1 (555) 019-9000">
+              <div class="error-msg">Enter a valid phone number</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message *</label>
+              <textarea id="contact-message" class="form-control" placeholder="Write details of your query..."></textarea>
+              <div class="error-msg">Message content is required</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="btn-submit-contact">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Info Details Sidebar (omitted for brevity) -->
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+        </svg>
+        <span>AuraCare</span>
+      </a>
+      <p>AuraCare Hospital provides exceptional medical treatments, innovative procedures, and supportive specialist services to guarantee patient safety and welfare.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 AuraCare Hospital. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Hide all sections except contact
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('main > section').forEach(sec => {
+      if (sec.id !== 'contact') sec.style.display = 'none'
+    })
+  })
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

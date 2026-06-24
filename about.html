@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraCare - About</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Include the same header markup as index.html -->
+<!-- For simplicity we reuse the header from index.html (copy) -->
+<header>
+  <div class="container nav-wrapper">
+    <a href="index.html" class="logo" id="header-logo">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+      </svg>
+      <span>AuraCare</span>
+    </a>
+
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links" id="main-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button class="btn btn-primary book-apt-btn" id="nav-book-btn">Book Now</button></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-controls="main-nav-links" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- About section only -->
+  <!-- Copied from index.html -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>About AuraCare</h2>
+        <p>Dedicated to delivering exemplary and empathetic health services, restoring well-being, and strengthening communities.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-img-box">
+          <img src="assets/hospital_about.png" alt="Our premium and modern hospital lobby interior">
+          <div class="experience-badge" id="exp-badge">
+            <span>12+</span>
+            <p>Years in Healthcare</p>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-tabs" role="tablist">
+            <button class="tab-btn active" data-tab="tab-mission" role="tab" aria-selected="true" id="btn-tab-mission">Our Mission</button>
+            <button class="tab-btn" data-tab="tab-vision" role="tab" aria-selected="false" id="btn-tab-vision">Our Vision</button>
+            <button class="tab-btn" data-tab="tab-values" role="tab" aria-selected="false" id="btn-tab-values">Core Values</button>
+          </div>
+
+          <div class="tab-content active" id="tab-mission" role="tabpanel" aria-labelledby="btn-tab-mission">
+            <p>Our mission is to improve healthcare quality in our communities by providing patient-centric, compassionate care. We treat every individual with dignity and ensure transparency in all clinical processes.</p>
+            <p>We strive to stay at the forefront of medical technology to provide early diagnostic systems and effective therapies that safeguard you and your loved ones.</p>
+          </div>
+
+          <div class="tab-content" id="tab-vision" role="tabpanel" aria-labelledby="btn-tab-vision">
+            <p>Our vision is to be recognized as a premier destination for holistic and advanced clinical care. We aspire to lead the region in clinical research, medical innovation, and exceptional patient safety records.</p>
+            <p>By building a network of top-tier health practitioners, we want to deliver responsive care that sets national standards in excellence.</p>
+          </div>
+
+          <div class="tab-content" id="tab-values" role="tabpanel" aria-labelledby="btn-tab-values">
+            <p>We believe clinical excellence and core human ethics must walk hand in hand. Our organizational culture is founded on accountability, continuous research, and patient respect.</p>
+            <div class="about-features">
+              <div class="about-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                <span>Professional Integrity</span>
+              </div>
+              <div class="about-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                <span>Patient-First Quality</span>
+              </div>
+              <div class="about-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                <span>Continuous Innovation</span>
+              </div>
+              <div class="about-feature-item">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                <span>24/7 Responsiveness</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer (copied) -->
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+        </svg>
+        <span>AuraCare</span>
+      </a>
+      <p>AuraCare Hospital provides exceptional medical treatments, innovative procedures, and supportive specialist services to guarantee patient safety and welfare.</p>
+    </div>
+    <!-- minimal footer links omitted for brevity -->
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 AuraCare Hospital. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Hide all sections except #about if present (keeps JS intact for modals and header behavior)
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('main > section').forEach(sec => {
+      if (sec.id !== 'about') sec.style.display = 'none'
+    })
+  })
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
